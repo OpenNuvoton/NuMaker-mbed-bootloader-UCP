@@ -1,0 +1,17 @@
+{
+    "name": "mbedbl-ucp",
+    "config": {
+        "update-storage": {
+            "help": "Storage option for update image. Common values: ARM_UCP_FLASHIAP and ARM_UCP_FLASHIAP_BLOCKDEVICE.",
+            "macro_name": "MBED_CLOUD_CLIENT_UPDATE_STORAGE",
+            "options": ["ARM_UCP_FLASHIAP", "ARM_UCP_FLASHIAP_BLOCKDEVICE"],
+            "value": null
+        }
+    },
+    "macros" : [
+        "ARM_UC_PROFILE_MBED_CLOUD_CLIENT=1",
+        "ARM_UC_FEATURE_CRYPTO_PAL=0",
+        "ARM_UC_FEATURE_CRYPTO_MBEDTLS=1",
+        "ARM_UC_PAAL_TRACE_ENABLE=0"
+    ]
+}
